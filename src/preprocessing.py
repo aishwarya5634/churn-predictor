@@ -53,3 +53,15 @@ But high balance AND inactive together → that is a very
 specific red flag that a valuable customer is about to walk 
 out the door. By creating this feature you are encoding that
 business insight directly into your data so the model can act on it.'''
+
+if __name__ == '__main__':
+    df = load_and_clean('data/bank_churn.csv')
+    print('Cleaned shape: ', df.shape)
+    df.to_csv('data/bank_churn_cleaned.csv', index = False)
+    print('Saved to data/bank_churn_cleaned.csv')
+    
+    df = engineer_features(df)
+    print('Shape after feature engineering: ', df.shape)
+    df.to_csv('data/bank_churn_features.csv', index= False)
+    print('Saved to data/bank_churn_features.csv')
+    
