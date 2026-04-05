@@ -1,4 +1,4 @@
-# Churn Predictor
+# Churn Predictor for Banking 
 
 A machine learning project to predict customer churn using classification models. The project covers the full data science pipeline: data loading, exploratory data analysis, preprocessing, model training, evaluation, and experiment tracking.
 
