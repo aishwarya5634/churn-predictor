@@ -1,4 +1,4 @@
-# Churn Predictor
+# Churn Predictor for Banking 
 
 A machine learning project to predict customer churn using classification models. The project covers the full data science pipeline: data loading, exploratory data analysis, preprocessing, model training, evaluation, and experiment tracking.
 
@@ -21,8 +21,8 @@ churn-predictor/
 - [x] Repository structure set up (`data/`, `notebooks/`, `src/`)
 - [x] Dependencies defined in `requirements.txt`
 - [x] Jupyter notebook environment configured
-- [ ] EDA and data analysis *(in progress)*
-- [ ] Data preprocessing and feature engineering
+- [x] EDA and data analysis *(in progress)*
+- [x] Data preprocessing and feature engineering
 - [ ] Model training and evaluation
 - [ ] Hyperparameter tuning
 - [ ] Deployment / API
@@ -39,27 +39,7 @@ churn-predictor/
 - **Experiment Tracking:** MLflow
 - **Model Explainability:** SHAP
 - **Web Framework (planned):** Streamlit / FastAPI / Flask
-
----
-
-## Setup
-
-1. Clone the repository:
-```bash
-   git clone https://github.com/aishwarya5634/churn-predictor.git
-   cd churn-predictor
-```
-
-2. Install dependencies:
-```bash
-   pip install -r requirements.txt
-```
-
-3. Launch Jupyter Lab:
-```bash
-   jupyter lab
-```
-
+  
 ---
 
 ## Status
