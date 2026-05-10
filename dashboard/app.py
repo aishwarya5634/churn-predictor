@@ -9,7 +9,9 @@ import matplotlib.pyplot as plt
 import sys
 import os
 
-sys.path.append('..')
+import os
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(ROOT)
 from src.retention_engine import (
     apply_retention_strategy,
     get_strategy,
@@ -33,13 +35,13 @@ st.set_page_config(
 # ─────────────────────────────────────
 @st.cache_resource
 def load_models():
-    model  = joblib.load('../src/best_model.pkl')
-    scaler = joblib.load('../src/scaler.pkl')
+    model  = joblib.load(os.path.join(ROOT, 'src', 'best_model.pkl'))
+    scaler = joblib.load(os.path.join(ROOT, 'src', 'scaler.pkl'))
     return model, scaler
 
 @st.cache_data
 def load_data():
-    return pd.read_csv('../data/bank_churn_with_predictions.csv')
+    return pd.read_csv(os.path.join(ROOT, 'data', 'bank_churn_with_predictions.csv'))
 
 model, scaler = load_models()
 df            = load_data()
