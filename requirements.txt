@@ -10,3 +10,6 @@ xgboost
 imbalanced-learn
 scipy
 requests
+fastapi
+uvicorn
+pydantic
